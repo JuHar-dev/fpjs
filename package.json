@@ -1,6 +1,6 @@
 {
   "name": "funpjs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Basic functional programming concepts for javascript",
   "scripts": {
     "test": "mocha -r ts-node/register test/**/*.spec.ts --exit",
