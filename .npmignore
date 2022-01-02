@@ -1,4 +1,5 @@
 lib
+index.ts
 tsconfig.json
 tslint.json
 .prettierrc
