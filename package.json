@@ -1,13 +1,13 @@
 {
   "name": "funpjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Basic functional programming concepts for javascript",
   "scripts": {
     "test": "mocha -r ts-node/register test/**/*.spec.ts --exit",
     "build": "npm run clean && tsc -p .",
     "clean": "npx rimraf ./dist",
     "prepublish": "npm run build",
-    "version": "npm run format && git add -A lib",
+    "version": "git add -A lib",
     "postversion": "git push && git push --tags"
   },
   "files": [
