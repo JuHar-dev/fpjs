@@ -17,9 +17,7 @@ export abstract class Either<L, R> {
     } else if (this.right) {
       return r(this.right);
     }
-    throw Error(
-      "Either was neither right or left (this should never happen and there is something seriously wrong)"
-    );
+    throw Error("Either was neither right or left (this should never happen and there is something seriously wrong)");
   }
 }
 
