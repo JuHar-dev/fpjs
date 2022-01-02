@@ -1,6 +1,3 @@
-export default class Failure{
-    constructor(readonly reason: string){
-
-    }
+export default class Failure {
+  constructor(readonly reason: string) {}
 }
-
