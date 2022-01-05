@@ -8,7 +8,16 @@ describe("Either", () => {
     expect(either.isRight()).to.equal(true);
     either.fold(
       (l) => null,
-      (r) => expect(r).to.equal(data)
+      (r) => expect(r).to.equal(data),
+    );
+  });
+
+  it("should be right when right was used to create the either (with boolean)", () => {
+    const either = right(false);
+    expect(either.isRight()).to.equal(true);
+    either.fold(
+      (l) => null,
+      (r) => expect(r).to.equal(false),
     );
   });
 
@@ -18,7 +27,7 @@ describe("Either", () => {
     expect(either.isLeft()).to.equal(true);
     either.fold(
       (l) => expect(l).to.equal(data),
-      (r) => null
+      (r) => null,
     );
   });
 });

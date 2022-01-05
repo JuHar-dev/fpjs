@@ -12,10 +12,10 @@ export abstract class Either<L, R> {
   }
 
   fold<B>(l: (left: L) => B, r: (right: R) => B): B {
-    if (this.left) {
-      return l(this.left);
-    } else if (this.right) {
-      return r(this.right);
+    if (this.isLeft()) {
+      return l(this.left!);
+    } else if (this.isRight()) {
+      return r(this.right!);
     }
     throw Error("Either was neither right or left (this should never happen and there is something seriously wrong)");
   }
