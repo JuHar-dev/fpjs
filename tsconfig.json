@@ -9,6 +9,6 @@
     "strict": true,
     "declaration": true
   },
-  "exclude": ["test, dist"],
+  "exclude": ["test", "dist"],
   "compileOnSave": true
 }

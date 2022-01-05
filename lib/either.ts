@@ -3,7 +3,7 @@ export abstract class Either<L, R> {
   protected right: R | undefined;
 
   isRight(): boolean {
-    if (this.right) return true;
+    if (this.right !== undefined) return true;
     return false;
   }
 
